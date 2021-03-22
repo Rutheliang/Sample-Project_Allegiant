@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Booking.listeners"/>
+  </listeners>
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="Booking.SeachFlight">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+          <include name="allegiantSearchFLight"/>
+        </methods>
+      </class> <!-- Booking.SeachFlight -->
+      <class name="Booking.LoginAccount">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Booking.LoginAccount -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
